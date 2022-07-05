@@ -1,0 +1,12 @@
+﻿@model Ecommerce.Models.ProductModel;
+@{ 
+    var product = ViewData["product"] as ProductModel;
+}
+    <div class="card" style="width: 18rem;">
+        
+        <div class="card-body">
+            <h5 class="card-title"> @product.Name</h5>
+            <h5 class="card-title">gia: @product.Price</h5>
+            
+        </div>
+    </div>
