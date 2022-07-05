@@ -145,3 +145,7 @@ D:\Ecommerce\Ecommerce\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-asp
 D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Views\First\HelloView.cshtml.g.cs
 D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\MyView\First\xinchao3.cshtml.g.cs
 D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Views\First\ProductView.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\ProductManager\Views\Product\Index.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\ProductManager\Views\_Layout.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\ProductManager\Views\_ViewStart.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\ProductManager\Views\_ViewImports.cshtml.g.cs

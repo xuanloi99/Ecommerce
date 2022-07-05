@@ -1,0 +1,11 @@
+﻿@using Ecommerce.Models;
+@model List<ProductModel>
+
+<h1>Danh sach san pham </h1>
+<ul>
+
+    @foreach (var item in Model)
+    {
+        <li>@item.Name</li>
+    }
+</ul>

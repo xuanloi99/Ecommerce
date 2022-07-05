@@ -1,7 +1,9 @@
+using Ecommerce.ExtendMethod;
 using Ecommerce.Models;
 using Ecommerce.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace Ecommerce
@@ -61,14 +64,19 @@ namespace Ecommerce
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            //Config error 400-500
+            app.AddStatusCodePage();
             app.UseRouting();
 
             app.UseAuthentication();
             app.UseAuthorization();
-
+            //ProductManager
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapAreaControllerRoute(
+                    name: "product",
+                    pattern: "{controller}/{action=Index}/{id?}",
+                    areaName: "ProductManager");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
