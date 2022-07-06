@@ -149,3 +149,9 @@ D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\ProductManager\Views\Product
 D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\ProductManager\Views\_Layout.cshtml.g.cs
 D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\ProductManager\Views\_ViewStart.cshtml.g.cs
 D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\ProductManager\Views\_ViewImports.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\Database\Views\DbManage\Index.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\Database\Views\_ViewImports.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\Database\Views\_ViewStart.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Areas\Database\Views\DbManage\DeleteDb.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Views\Shared\_AlertMessage.cshtml.g.cs
+D:\Ecommerce\Ecommerce\obj\Debug\net5.0\Razor\Views\Shared\_MenuManagePartial.cshtml.g.cs

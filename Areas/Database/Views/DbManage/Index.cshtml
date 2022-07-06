@@ -1,0 +1,38 @@
+﻿@using Microsoft.EntityFrameworkCore;
+@using System.Data;
+@inject EcommerceDbContext dbContext
+@{
+    var connect = dbContext.Database.GetDbConnection();
+    var dbName = connect.Database;
+    var canConnect = dbContext.Database.CanConnect();
+}
+<partial name="_AlertMessage" />
+<h1>@dbName</h1>
+<h1>@connect.DataSource</h1>
+
+<h1>@connect.State</h1>
+@if (!canConnect)
+{
+    <p class="alert alert-danger">Cannot connect to database</p>
+}
+@if (canConnect)
+{
+    <h2>Table</h2>
+    await dbContext.Database.OpenConnectionAsync();
+    var tables = dbContext.Database.GetDbConnection().GetSchema("Tables");
+    <ul>
+        @foreach (System.Data.DataRow row in tables.Rows)
+        {
+            <li>@row["TABLE_NAME"]</li>
+        }
+    </ul>
+    <a class="btn btn-danger" asp-action="DeleteDb">Delete @dbName</a>
+
+}
+@if (dbContext.Database.GetPendingMigrations().Any())
+{
+<form method="post">
+    <button class="btn btn-danger" type="submit" asp-action="Migration">Update migration </button>
+</form>
+    
+}
